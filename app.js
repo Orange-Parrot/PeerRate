@@ -4,7 +4,7 @@ const express = require ('express')
 var path = require('path');
 
 var app = express()
-app.use(express.static(__dirname + '/.'));
+app.use(express.static(__dirname + '/room'));
 
 const port = 3000
 
@@ -19,7 +19,7 @@ var server = app.listen(port, (error) => {
 
 app.get('/', (req, res) => {
     res.writeHead(200, {'Content-Type' : 'text/html'})
-    fs.readFile('index.html', (error,data) => {
+    fs.readFile('room/index.html', (error,data) => {
         if(error){
             res.writeHead(404)
             res.write("404 Page Not Found")

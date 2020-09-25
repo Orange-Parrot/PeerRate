@@ -12,29 +12,6 @@ body{
     overflow: hidden;
 }
 
-#nameDiv{
-    animation-name: fadeOut;
-    animation-duration: 250ms;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.nameBox{
-    height:2.3vh;
-    width:100vw;
-
-    background-color: transparent;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin: 1px;
-}
-
 input{
     background-color: rgb(252, 252, 252);
     width:17vw;
@@ -141,11 +118,4 @@ button:hover{
     font-size: 4vh;
     letter-spacing: 20px;
     color:rgb(252, 252, 252);
-}
-
-#welcomeScreen{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
