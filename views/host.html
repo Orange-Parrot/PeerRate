@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/room/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+    <script src="/room/script.js" defer></script>
+
+    <script src="anime.min.js" defer></script>
+    <title>PeerRate</title>
+</head>
+    <body>
+
+        <div id="mainContainer">
+            <h1 style="margin-top:10px; margin-bottom: 0;" id="topic">
+                At my worst, I am ...
+            </h1>
+            <!-- 2 main box div -->
+            <div id="chatSection">
+                <!-- person1 (main) -->
+                <div class="prsSection">
+                    <h2>
+                       {{name}}
+                    </h2>
+
+                    <div class="dragInSection cardContainer">
+
+                    </div>
+                </div>
+
+                <!-- middle section: add buttons -->
+                <div id="customCard">
+                    <button id='doneBtn'>
+                        I'm done!
+                    </button>
+                    <div id="customSection">
+                        <div id="customCardAppendix"></div>
+                        <button id="customBtn">
+                            Add a custom card
+                        </button>
+                    </div>
+                </div>
+
+                <!-- person2 (aux) -->
+                <div class="prsSection">
+                    <h2 class="partner-name">
+                        Waiting For Partner...
+                    </h2>
+                    <div class="dragInSection cardContainer">
+
+                    </div>
+                </div>
+            </div>
+            <script>
+                const Constant = {
+                    isHost:true,
+                    code:"{{code}}",
+                    name:"{{name}}"
+                }
+            </script>
+    
+            <!-- card div -->
+            <div id="cardSection" class="deleteContainer cardContainer">
+            </div>
+        </div>
+        <script src="/room/EditModule.js" defer></script>
+    </body>
+</html>

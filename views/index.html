@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/home/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+    <body>
+        <!-- title screen section -->
+        <h1 id="appTitle" class="titles">
+            Peer Rate
+        </h1>
+
+        <button id="startBtn" class="titles">
+            Get Started
+        </button>
+
+        <!-- name box -->
+        <div id="nameDiv">
+            <p style="margin:0; margin-bottom: 10px;" id="nameText"> <b>
+                What Is Your Name?
+            <b></p>
+ 
+            </script>
+
+
+
+                <input type="text"  class="name" style="padding: 8px; height: auto;" placeholder="John Dough"
+                id = "nameBox">
+                <input type="text" class="code"  style="padding: 8px;height: auto;" placeholder=" "
+                id = "nameBox">
+
+
+          <div >
+
+
+                <button class="smallBtn host-btn" onclick="redirect('host')" id="nextBtn">
+                    Host
+                </button>
+        
+                <button class="smallBtn join-btn" onclick="redirect('join')" id="nextBtn">
+                    Join
+                </button>
+                
+            </div>
+        </div>
+<A></A>
+        <script>
+            var a = document.querySelector("a");
+            var nameE = document.querySelector(".name");
+            var code = document.querySelector(".code");
+            console.log(a);
+            function redirect(where){
+                if(where=="host"){
+                    a.href="/host?name="+name.value+"&"+"name="+code.value;
+                    window.location.href = "/host?name="+nameE.value+"&"+"code="+code.value,true;
+                    console.log( window.location.href)
+                }
+                else{
+                    a.href="/join?name="+name.value+"&"+"code="+code.value;
+                    window.location.href = "/join?name="+nameE.value+"&"+"code="+code.value,true;
+                }
+           
+
+    
+                return false;
+            }
+            </script>
+
+        <script src="/home/script.js"></script>
+        <script src="/anime.min.js"></script>
+    </body>
+</html>

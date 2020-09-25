@@ -1,7 +1,7 @@
 {
   "name": "peerrate",
   "version": "1.0.0",
-  "description": "",
+  "description": "the repository for the web application peer rate, built for THINK CARE ACT\r Try it out at http://peerrate.net",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "path": "^0.12.7"
-  }
+    "mustache-express": "^1.3.0",
+    "path": "^0.12.7",
+    "ws": "^7.3.1"
+  },
+  "devDependencies": {}
 }
