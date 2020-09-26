@@ -58,7 +58,7 @@ window.onload = () => {
     
     document.getElementById('nextBtn').style.visibility = "hidden"
     document.getElementById('nameBox').style.visibility = "hidden"
-    // document.getElementById('idBox').style.visibility = "hidden"
+    document.getElementById('idBox').style.visibility = "hidden"
     document.getElementById('nameText').style.visibility = "hidden"
 }
 
