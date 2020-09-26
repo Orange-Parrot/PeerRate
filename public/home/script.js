@@ -11,14 +11,14 @@ window.onload = () => {
         easing: 'easeOutQuart',
     })
     
-    textBoxFromBottom.set('#nameBox, #nameText', {
+    textBoxFromBottom.set('#nameBox, #nameText, #idBox', {
         translateY: 250,
         backgroundColor: 'transparent',
         color: 'transparent'
     })
 
     textBoxFromBottom.add({
-        targets:'#nameBox',
+        targets:'#nameBox, #idBox',
         translateY:0,
         backgroundColor: 'rgb(252, 252, 252)',
         color: 'rgb(80, 80, 80)',
@@ -58,11 +58,13 @@ window.onload = () => {
     
     document.getElementById('nextBtn').style.visibility = "hidden"
     document.getElementById('nameBox').style.visibility = "hidden"
+    // document.getElementById('idBox').style.visibility = "hidden"
     document.getElementById('nameText').style.visibility = "hidden"
 }
 
 document.getElementById('startBtn').addEventListener('click', ()=>{
     document.getElementById('nameBox').style.visibility = "visible"
+    document.getElementById('idBox').style.visibility = "visible"
     document.getElementById('nameText').style.visibility = "visible"
 
     textBoxFromBottom.play()
